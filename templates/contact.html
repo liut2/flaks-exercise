@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+
+{% block body %}
+	<!--this is to create the contact template-->
+	<h1>please fill out the form to contact us</h1>
+	
+	<form method="POST">
+		{{form.name.label}}
+		{{form.name()}}
+		<p>{{form.submit()}}</p>
+	</form>
+	
+
+{% endblock body %}
